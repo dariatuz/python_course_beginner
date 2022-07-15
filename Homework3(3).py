@@ -14,11 +14,22 @@ else:
 
 
 #task 2
-num = int(input("Enter a number: "))
-if num > 21:
+userInput = 0
+while True:
+  try:
+     userInput = int(input("Enter something: "))
+  except ValueError:
+     print("Not an integer!")
+     continue
+  else:
+     print("Yes an integer!")
+     break
+if userInput == 21:
         print("You should visit Holland")
-else:
+elif userInput > 21:
  print("You should visit Vietnam")
+else:
+ print("Travel everywhere")
 
 
 
