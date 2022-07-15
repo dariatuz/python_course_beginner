@@ -14,15 +14,13 @@ else:
 
 
 #task 2
-while True:
-    age=input("Enter age: ")
-    if not age.isdigit():
-        print("please input number!")
-        continue
-if age >= int(21):
+age = ''
+age=input("Enter age: ")
+if (type(age)) == str:
+     print("please input number!")
+else check == 21:
     print("You should visit Holland")
-    
-elif:
+elif check > 21:
     print("You should visit Vietnam")
 
 
