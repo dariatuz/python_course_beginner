@@ -25,11 +25,11 @@ while True:
      print("Yes an integer!")
      break
 if userInput == 21:
-        print("You should visit Holland")
+     print("You should visit Holland")
 elif userInput > 21:
- print("You should visit Vietnam")
+     print("You should visit Vietnam")
 else:
- print("Travel everywhere")
+     print("Travel everywhere")
 
 
 
