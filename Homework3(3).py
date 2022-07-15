@@ -14,14 +14,11 @@ else:
 
 
 #task 2
-age = ''
-age=input("Enter age: ")
-if (type(age)) == str:
-     print("please input number!")
-else check == 21:
-    print("You should visit Holland")
-elif check > 21:
-    print("You should visit Vietnam")
+num = int(input("Enter a number: "))
+if num > 21:
+        print("You should visit Holland")
+else:
+ print("You should visit Vietnam")
 
 
 
