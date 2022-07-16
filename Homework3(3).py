@@ -34,7 +34,25 @@ else:
 
 #task 3
 
-
+name = input("Please input your name")
+print("Hello" + name)
+age = int(input("Please input your age:"))
+gender = str(input("Please input your gender:"))
+nickname = str(input("Please input your nickname:"))
+if "admin" in nickname:
+    print("Привет, повелитель!")
+elif "Женя" in nickname:
+    print("Советую Вам посмотреть 'TENET'")
+elif "Guido" in nickname:
+    print("Огромное спасибо!")
+elif age > 10 and age < 14 or age > 30 and gender == "M":
+    print("Советую Вам посмотреть ‘StarWars’ или 'Мандалорец'")
+elif age > 22 and age < 32 and gender == "Ж":
+    print("Советую Вам посмотреть 'Трансформеры'")
+elif age < 16 and gender == "Ж":
+    print("Советую Вам посмотреть 'Инсургент'")
+elif age < 11 and gender == "M":
+    print("Советую Вам посмотреть 'TMNT'")
 
 
 
