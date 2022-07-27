@@ -52,7 +52,7 @@ if not found_it:
     basket.append({'fruit': fruit, 'qty': qty})
     print(basket)
     
- #2
+ #2 проходишься по лакам и проверяешь есть/нет того или иного цвета
 nailpolish = [
     {'color': 'red', 'qty': 20},
     {'color': 'blue', 'qty': 12},
@@ -73,9 +73,9 @@ while index < len(nailpolish): #len Return the length (the number of items) of a
     index += 1
 
 if not found_it:
-    qty = int(input(f'Enter the qty for {fruit}:'))
-    basket.append({'fruit': fruit, 'qty': qty})
-    print(basket)
+    qty = int(input(f'Enter the qty for {color}:'))
+    nailpolish.append({'color': color, 'qty': qty})
+    print(nailpolish)
 
 
     
