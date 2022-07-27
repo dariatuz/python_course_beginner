@@ -77,11 +77,64 @@ if not found_it:
     nailpolish.append({'color': color, 'qty': qty})
     print(nailpolish)
 
+#3 while: если число больше 22 - выходим из цикла 
+data = 3
+while data < 22:
+    print(data)
+    data += 1
+else:
+    print("data is no longer less than 22")    
+    
+#4 while: если число больше 22 - выходим из цикла 
+data = 3
+while data < 22:
+    print(data)
+    data += 1
+else:
+    print("data is no longer less than 22") 
 
-    
-    
 
-    
+#5 while: если число больше 22 - выходим из цикла 
+data = 3
+while data < 22:
+    print(data)
+    data += 1
+else:
+    print("data is no longer less than 22") 
+
+#Написати 3 приклади з break у середині.
+#1 выходим из цикла если в слове оказывается буква "e" или "b"
+animal = "dog"
+i = 0
+while True:
+    print(animal[i])
+    if animal[i] == "e" or animal[i] == "b":
+        break
+    i += 1
+print("Out of doge loop")
+
+#2 ищем есть ли четное количество в нашем списке количества ошибок учеников
+
+errors = [3, 7, 6, 7, 3, 9, 3]
+numErr = False
+i = 0
+while i < len(errors):
+    print(i)
+    numErr = errors[i] % 2 == 0
+    if numErr:
+        break
+    i += 1 #!!!!!
+
+print(numErr)
+
+#3 
+
+
+
+#Написати 3 приклади з continue у середини.
+
+
+   
     
     
     
