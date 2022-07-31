@@ -24,60 +24,11 @@ i = 5
 while i <= 10:
    print(i ** 2)
     i += 1
-#Написати 5 прикладів while : else конструкції
-#1 проходишься по корзине: если такой фрукт есть - тебе выведется количество, а если нет, то можно будет его добавить
-basket = [
-    {'fruit': 'apple', 'qty': 20},
-    {'fruit': 'banana', 'qty': 30},
-    {'fruit': 'orange', 'qty': 10}
-]
 
-fruit = input('Enter a fruit:')
+     
+#  аписати 5 прикладів while : else конструкції
 
-index = 0
-found_it = False
-
-while index < len(basket):
-    item = basket[index]
-    # check the fruit name
-    if item['fruit'] == fruit:
-        found_it = True
-        print(f"The basket has {item['qty']} {item['fruit']}(s)")
-        break
-
-    index += 1
-
-if not found_it:
-    qty = int(input(f'Enter the qty for {fruit}:'))
-    basket.append({'fruit': fruit, 'qty': qty})
-    print(basket)
-    
- #2 проходишься по лакам и проверяешь есть/нет того или иного цвета
-nailpolish = [
-    {'color': 'red', 'qty': 20},
-    {'color': 'blue', 'qty': 12},
-    {'color': 'black', 'qty': 13}
-]
-color = input('Enter a color:')
-
-index = 0
-found_it = False
-
-while index < len(nailpolish): #len Return the length (the number of items) of an object. The argument may be a sequence (string, tuple or list) or a mapping (dictionary).
-    item = nailpolish[index]
-    # check the nailpolish color
-    if item['color'] == color:  # проверка строки 8
-        found_it = True
-        print(f"You have {item['qty']} bottles of {item['color']} nailpolish")
-        break
-    index += 1
-
-if not found_it:
-    qty = int(input(f'Enter the qty for {color}:'))
-    nailpolish.append({'color': color, 'qty': qty})
-    print(nailpolish)
-
-#3 while: если число больше 22 - выходим из цикла 
+#1
 data = 3
 while data < 22:
     print(data)
@@ -85,24 +36,46 @@ while data < 22:
 else:
     print("data is no longer less than 22")    
     
-#4 while: если число больше 22 - выходим из цикла 
-data = 3
-while data < 22:
-    print(data)
-    data += 1
+#2 
+counter = 0
+
+while counter < 3:
+    print("Inside loop")
+    counter = counter + 1
 else:
-    print("data is no longer less than 22") 
+    print("Inside else")
 
 
-#5 while: если число больше 22 - выходим из цикла 
-data = 3
-while data < 22:
-    print(data)
-    data += 1
+#3
+n = 5
+while n > 0:
+    n = n - 1
+    if n == 2:
+        break
+    print(n)
 else:
-    print("data is no longer less than 22") 
+    print("Loop is finished")
+
+#4
+n = 5
+while n > 0:
+    n = n - 1
+    if n == 2:
+        continue
+    print(n)
+else:
+    print("Loop is finished")
+
+#5
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print('much better')
 
 #Написати 3 приклади з break у середині.
+
 #1 выходим из цикла если в слове оказывается буква "e" или "b"
 animal = "dog"
 i = 0
@@ -129,15 +102,102 @@ print(numErr)
 
 #3 
 
+print('-- Help: type quit to exit --')
+while True:
+    color = input('Enter your favorite color:')
+    if color.lower() == 'quit':
+        break
+    elif color.lower() == 'pink':
+        print('I love this color')
+        break
+    else:
+        print('this one is nice too')
+        break
 
 
 #Написати 3 приклади з continue у середини.
 
+#1
 
+for i in range(10):
+    if i == 5:
+        print("Returning to the top of the loop!")
+        continue
+    print(i)
+
+
+
+#2
+x = 10
+while x:
+    x = x - 1
+    if x % 2 != 0:
+        continue
+    print(x, "", end='')
+
+
+
+#3
+
+new_var = 8
+while new_var > 0:
+    new_var = new_var - 1
+    if new_var == 3: #  skip the part of the loop
+        continue
+    print(new_var)
+print("loop end")
    
     
+#4 Написати приклади усіх методів з set().    
     
-    
-    
+#1 add/remove
+
+names = {"Steve", "Rick", "Volodymir"}
+names2 = names
+names2.add("Dmitro")
+names.remove("Volodymir")
+print("Old Set is:", names)
+print("New Set is:", names2)
+
+#2 set.difference
+fruits = {"apple", "banana", "cherry"}
+veggies = {"potato", "spinach", "carrot","cherry"}
+
+diffSet = fruits.difference(veggies)
+
+print(diffSet)
+
+
+#3 pop
+
+
+#4 discard
+
+
+#4 union
+
+
+#5 update
+
+
+
+
+
+#Задача 1. 10 баллов
+#пользователь вводит пароль первый раз система запоминает и просит повторить пароль проверяет его если нет то просит повторить. А если совпал то сообщение.
+
+#Задача_2. 5 баллов
+#Дан список с повторяющимися значениями необходимо из него удалить все определенные значения используя while цикл.
+#Входные данные: ['bear', 'milk', 'eg', 'eg', 'eg', 'eg'] удалить все eg
+#Результат: ['bear', 'milk']
+
+#Задача_3. 10 баллов
+#Тема while and else
+#дан список произвольный с int нужно вывести "all numbers are even" если все четные и NO если нет
+#Пример входных данных: [11, 23, 65, 44, 76, 533]
+#Результат: NO
+#Пример входных данных: [12, 22, 66, 44, 76, 534]
+#Результат: all numbers are even
+
    
     
