@@ -175,7 +175,12 @@ print(diffSet)
 
 
 #4 union
+fruits  = {"apple", "banana", "cherry"}
+veggies = {"potato", "spinach", "carrot","cherry"}
 
+diffSet = fruits.union(veggies) 
+
+print(diffSet)
 
 #5 update
 
