@@ -169,10 +169,14 @@ print(diffSet)
 
 
 #3 pop
-
+fruits = {"apple", "banana", "cherry"}
+fruits.pop()
+print(fruits)
 
 #4 discard
-
+fruits = {"apple", "banana", "cherry"}
+fruits.discard("banana")
+print(fruits)
 
 #4 union
 fruits  = {"apple", "banana", "cherry"}
@@ -184,7 +188,10 @@ print(diffSet)
 
 #5 update
 
-
+fruits = {"apple", "banana", "cherry"}
+veggies = {"potato", "spinach", "carrot","cherry"}
+fruits.update(veggies)
+print(fruits)
 
 
 
