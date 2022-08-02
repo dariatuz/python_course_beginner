@@ -197,11 +197,28 @@ print(fruits)
 
 #Задача 1. 10 баллов
 #пользователь вводит пароль первый раз система запоминает и просит повторить пароль проверяет его если нет то просит повторить. А если совпал то сообщение.
+while True:
+    p = input("Input your password")
+    x = input("Input your password again")
+    if p == x:
+        print("Valid Password")
+        break
+    elif p != x:
+        print("not true, please try again")
 
 #Задача_2. 5 баллов
 #Дан список с повторяющимися значениями необходимо из него удалить все определенные значения используя while цикл.
 #Входные данные: ['bear', 'milk', 'eg', 'eg', 'eg', 'eg'] удалить все eg
 #Результат: ['bear', 'milk']
+
+products = ['bear', 'milk', 'eg', 'eg', 'eg', 'eg']
+extra_element = 'eg'
+while extra_element in products:
+    products.remove('eg')
+print(products)
+
+
+
 
 #Задача_3. 10 баллов
 #Тема while and else
@@ -210,6 +227,27 @@ print(fruits)
 #Результат: NO
 #Пример входных данных: [12, 22, 66, 44, 76, 534]
 #Результат: all numbers are even
+
+
+#Задача_4 25 баллов
+#написать программу которая будет создавать список методов из доступных методов питон объектов. Под доступными подразумевается
+#методы без подчеркиваний. Фунции dir()
+#т.е для объекта set должен быть список методов
+
+#['add',
+#'clear',
+#'copy',
+#'difference',
+#'discard',
+#'intersection',
+#'isdisjoint',
+#'issubset',
+#'issuperset',
+#'pop',
+#'remove',
+#'union',
+#'update']
+
 
    
     
