@@ -228,6 +228,19 @@ print(products)
 #Пример входных данных: [12, 22, 66, 44, 76, 534]
 #Результат: all numbers are even
 
+sp_sp = [12, 4, 66, 44, 76, 534]
+i = 0
+f = 0
+while i < len(sp_sp):
+  f = f + sp_sp[i] % 2
+  i = i+1
+if f == 0:
+    print("all numbers are even")
+else:
+    print("No")
+
+
+
 
 #Задача_4 25 баллов
 #написать программу которая будет создавать список методов из доступных методов питон объектов. Под доступными подразумевается
@@ -248,6 +261,12 @@ print(products)
 #'union',
 #'update']
 
+sp_sp = dir(set)
+f1 = []
+for i in sp_sp:
+    if i[0] != '_':
+        f1.append(i)
+print(f1)
 
    
     
