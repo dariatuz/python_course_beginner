@@ -274,7 +274,7 @@ print(f1)
 https://realpython.com/quizzes/python-lists-tuples/results/?t=eyJjIjo0LCJuIjoxMSwicSI6Nywic2lnIjoiIUZKZ1pFQHc5az1iPiZRQEJOSihMMUY3VXMtcSF8SUFSK2wlKExqbiIsInQiOjIzNjIwLCJ2IjozfQ==&s=1
 #Set
 #прочитать статью и пройти на отлично тест в конце.
-
+https://realpython.com/quizzes/python-sets/results/?t=eyJjIjo1LCJuIjoxMCwicSI6MTEsInNpZyI6IkU7fm1tQzJ1RGBMNClhQDM9dCUxYm12X3JuaWhsKSt3Sm0pc2dtQ0wiLCJ0IjoxNTA5MCwidiI6M30=&s=1
 
 #Задача_6 5 балллов﻿
 #Написать примеры всех методов из set объекта.
