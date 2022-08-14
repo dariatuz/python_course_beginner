@@ -268,5 +268,88 @@ for i in sp_sp:
         f1.append(i)
 print(f1)
 
+#Задача_5 15 баллов
+#lis + tuple
+#Прочитать статью и сдать тесты в конце статьи
+https://realpython.com/quizzes/python-lists-tuples/results/?t=eyJjIjo0LCJuIjoxMSwicSI6Nywic2lnIjoiIUZKZ1pFQHc5az1iPiZRQEJOSihMMUY3VXMtcSF8SUFSK2wlKExqbiIsInQiOjIzNjIwLCJ2IjozfQ==&s=1
+#Set
+#прочитать статью и пройти на отлично тест в конце.
+
+
+#Задача_6 5 балллов﻿
+#Написать примеры всех методов из set объекта.
+#Пример
+#set1 = {1,2,3}
+# add
+#set1.add(4)
+# update
+#set1.update([2,3,4,5])
+
+set1 = {1,2,3}
+# add
+set1.add(4)
+
+# update
+set1.update([2,3,4,5])
+s = {1, 2, 3}
+s.add(5)
+print(s)
+
+# clear
+s1 = {1, 2, 3}
+s1.clear()
+print(s1)
+
+# copy
+s2 = {1, 2, 3}
+s3 = s2.copy()
+print(s3)
+
+# symmetric_difference
+one = {1, 2, 3}
+two = {5, 6, 4, 1, 2, 3}
+print(two.symmetric_difference(one))
+
+# discard
+s6 = {1, 2, 3}
+s6.discard(2)
+print(s6)
+
+#isdisjoint
+one = {1, 2, 3}
+two = {5, 6, 4, 1, 2, 3}
+print(two.isdisjoint(one))
+
+# intersection
+one = {1, 2, 3, 4}
+two = {2, 3, 4, 5}
+three = {3, 4, 5, 6}
+four = {4, 5, 6, 7}
+result = one.intersection(two,three,four)
+print(result)
+
+# discard
+s4 = {1, 2, 3}
+s5 = {5, 6, 4, 1, 2, 3, 7}
+s4.discard(1)
+print(s4)
+
+# union
+one = {1, 2, 3}
+two = {5, 6, 4, 1, 2, 3}
+print(one.union(two))
+
+#update
+x1 = {'foo', 'bar', 'baz'}
+x2 = {'foo', 'baz', 'qux'}
+x1.update(['corge', 'garply'])
+print(x1)
+
+#remove
+s4 = {1, 2, 3}
+s5 = {5, 6, 4, 1, 2, 3, 7}
+s4.remove(1)
+print(s4)
+
    
     
